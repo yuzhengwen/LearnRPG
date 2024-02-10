@@ -1414,6 +1414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd965e916dea9f24aad93be85bfb24e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  stoppingDist: 1.5
 --- !u!114 &866171893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3943,6 +3945,7 @@ GameObject:
   - component: {fileID: 5487591291102032401}
   - component: {fileID: 5487591291102032403}
   - component: {fileID: 5487591291102032402}
+  - component: {fileID: 5487591291102032404}
   m_Layer: 7
   m_Name: Skeleton
   m_TagString: Enemy
@@ -4239,6 +4242,8 @@ GameObject:
   - component: {fileID: 866171886}
   - component: {fileID: 866171890}
   - component: {fileID: 866171893}
+  - component: {fileID: 5230490574649263699}
+  - component: {fileID: 5230490574649263698}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -8711,6 +8716,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5230490574649263698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530541141029684881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c48e0b9c96e76c4d8b88f9846e1165a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5230490574649263699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530541141029684881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecc4355d7d4d9e499bbf6458bea879e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damage: 10
+  atkSpd: 10
 --- !u!4 &5258167557024162728
 Transform:
   m_ObjectHideFlags: 0
@@ -8976,6 +9008,21 @@ MonoBehaviour:
   precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
+--- !u!114 &5487591291102032404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264433202771292880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecc4355d7d4d9e499bbf6458bea879e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damage: 10
+  atkSpd: 0
 --- !u!137 &5497051525982125428
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0

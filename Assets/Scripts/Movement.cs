@@ -19,8 +19,8 @@ namespace YuzuValentine
         float motionSmoothTime = 0.1f;
         private Camera mainCamera;
 
-        private GameObject target;
-        private float stoppingDist = 1.5f;
+        public GameObject target;
+        public float stoppingDist = 1.5f;
 
         private void Awake()
         {
